@@ -10,6 +10,8 @@ module.exports = {
         // 'xxxs': '280px',
         'xxs' : '396px',
         'xs': '546px',
+        'mbl-lg' : {'raw': '((min-height: 872px) and (max-width: 1024px))'},
+        'portrait': {'raw': '(min-height: 872px)'}
       },
       spacing: {
         '17': '4.25rem'
