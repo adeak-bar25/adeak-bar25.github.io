@@ -58,16 +58,12 @@
     <script>
         const photo = document.getElementById('profile');
 
-        ['width','height'].forEach((v) => {
-            document.documentElement.style.setProperty(`--${v}-pbox`, `${window.getComputedStyle(photo)[v]}`);
-            console.log(`${v} : ${getComputedStyle(document.body).getPropertyValue(`--${v}-pbox`)}`);
-            // let w = window.getComputedStyle(photo)[v];
-            // console.log(`${v}`);
+        photo.addEventListener('load', () => {
+            ['width','height'].forEach((v) => {
+                document.documentElement.style.setProperty(`--${v}-pbox`, `${window.getComputedStyle(photo)[v]}`);
+                // console.log(`${v} : ${getComputedStyle(document.body).getPropertyValue(`--${v}-pbox`)}`);
+            });
         });
-
-        // const wPhoto = parseFloat(window.getComputedStyle(document.getElementById('profile')).width)
-        // document.documentElement.style.setProperty('--width-pbox', `${wPhoto}px`)
-        // document.documentElement.style.setProperty('--height-pbox', `${wPhoto}px`)
     </script>
 </body>
 </html>
