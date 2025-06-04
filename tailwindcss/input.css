@@ -2,6 +2,7 @@
     --main-theme: 78 116 238;
     --second-theme: 67 69 77;
     --width-pbox : 0%;
+    --height-pbox : 0%;
     @apply scroll-smooth
 }
 

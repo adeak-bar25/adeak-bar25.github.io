@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web</title>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        /* #div-wpbox::after{width: calc(var(--width-pbox) + .9rem);} */
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
     <header class="w-full bg-slate-500/40 backdrop-blur-md sticky top-0 left-0 right-0 flex justify-between py-4 px-4 rounded-b-xl z-10">
@@ -24,18 +24,18 @@
         </nav>
     </header>
 
-    <section id="hero" class="h-[95dvh] px-3 md:pl-6 grid grid-rows-[min-content_max-content_min-content_1fr] lg:grid-rows-[1fr_min-content_max-content_min-content_1fr] lg:grid-cols-2 lg:grid-flow-col scroll-mt-20">
-            <p class="text-base animate-float-f-b lg:text-2xl lg:row-start-2">Halo <span class="inline-block h-max origin-bottom w-fit animate-wiggle">👋</span>, Perkenalkan nama saya:</p>
-            <h2 class="text-5xl xs:text-6xl md:text-7xl lg:text-8xl mb-2 animate-float-f-b max-[630px]:w-[95dvw] break-words lg:row-start-3">Ade Akbar Magri Dinata</h2>
-            <p class="animate-float-f-b lg:row-start-4 lg:text-xl text-gray-700">High School Student</p>
+    <section id="hero" class="h-[97dvh] px-3 md:pl-6 grid grid-rows-[min-content_max-content_min-content_1fr] lg:grid-rows-[1fr_min-content_max-content_min-content_1fr] mbl-lg:grid-rows-[min-content_max-content_min-content_1fr] mbl-lg:grid-cols-none lg:grid-cols-2 mbl-lg:grid-flow-row lg:grid-flow-col scroll-mt-20">
+            <p class="text-base animate-float-f-b lg:text-2xl lg:row-start-2 mbl-lg:row-start-auto ">Halo <span class="inline-block h-max origin-bottom w-fit animate-wiggle">👋</span>, Perkenalkan nama saya:</p>
+            <h2 class="text-5xl xs:text-6xl md:text-7xl lg:text-8xl mb-2 animate-float-f-b max-[630px]:w-[95dvw] break-words lg:row-start-3 mbl-lg:row-start-auto">Ade Akbar Magri Dinata</h2>
+            <p class="animate-float-f-b lg:row-start-4 mbl-lg:row-start-auto lg:text-xl text-gray-700">High School Student</p>
             
-            <div class="flex relative w-dvw justify-end items-end sm:justify-self-end flex-col xs:w-full lg:col-start-2 lg:row-span-5">
-                <div class="after:block after:absolute after:-z-[1] after:animate-slide-f-br after:bg-sky-500 after:bottom-0 after:-right-3 after:rounded-tl-lg max-xs:after:w-[calc(var(--width-pbox)+.75rem)] xs:after:w-[calc(var(--width-pbox)+.8rem)] max-[395px]:after:h-[56%] xxs:after:h-[55dvh] lg:after:h-[59dvh]">
-                    <img src="asset/profile.png" id="profile" class="xxs:h-[65dvh] absolute flex-none xs:static  bottom-0 right-0 max-[546px]:-right-7 animate-slide-f-r lg:h-[75dvh]">
+            <div class="flex relative w-dvw justify-end items-end sm:justify-self-end flex-col xs:w-full lg:col-start-2 mbl-lg:col-start-auto mbl-lg:row-span-1 mbl-lg:row-start-auto lg:row-span-5">
+                <div class="after:block after:absolute after:-z-[1] after:animate-slide-f-br after:bg-sky-500 after:bottom-0 after:-right-3 after:rounded-tl-lg after:w-[calc(var(--width-pbox)+.75rem)] after:h-[calc(var(--height-pbox)-5.5rem)]">
+                    <img src="asset/profile.png" id="profile" class="xxs:h-[65dvh] w-auto flex-none xs:static animate-slide-f-r lg:h-[75dvh] portrait:h-auto portrait:w-[90dvw]">
                 </div>
             </div>
     </section>
-    <section id="about" class="mt-20 px-4 lg:px-6 2xl:mt-28 scroll-m-16">
+    <section id="about" class="mt-20 px-4 lg:px-6 2xl:mt-28 scroll-m-16 max-w-[100dvw]">
         <h2 class="text-2xl xs:text-5xl md:text-6xl mb-2 xs:mb-5">About Me</h2>
         <p class="xs:text-lg xl:text-xl">Saya adalah seorang siswa SMK yang memiliki minat besar dalam bidang komputer, khususnya di dunia pengembangan website. Saya mulai tertarik dengan pemrograman sejak duduk di bangku SMK, dan sejak itu terus belajar serta mengembangkan keterampilan di berbagai teknologi web seperti HTML, CSS, JavaScript, dan backend menggunakan Node.js.</p>
         <h3 class="text-2xl mt-5">Pendidikan Terakhir</h3>
@@ -44,9 +44,9 @@
                 <div class="md:flex items-center justify-center m-2 w-9 h-9 relative hidden">
                     <div class="w-5 h-5 bg-red-500/95 rounded-full ring-4 ring-red-500/25 animate-ring-pulse"></div>
                 </div>
-                <div class="card grid grid-cols-[min-content_max-content] grid-rows-[repeat(2 ,min-content)]">
-                    <img src="asset/logo/logosmk1nobg.png" alt="logo smkn 1 bulukumba" class="max-w-17 h-17 row-span-2 mr-5 place-self-center">
-                    <h4 class="place-self-end text-xl col-start-2">SMKN 1 Bulukumba <span class="font-light block lg:inline text-gray-700 text-base lg:before:content-['-'] before:inline-block lg:before:mx-2 lg:before:mr-1.5 break-words">Tehnik Jaringan Komputer dan Telekomunikasi</span></h4> 
+                <div class="card grid grid-cols-[88px_1fr] grid-rows-[repeat(2_,max-content)] ">
+                    <img src="asset/logo/logosmk1nobg.png" alt="logo smkn 1 bulukumba" class="min-w-17 max-w-17 h-17 row-span-2 mr-5 place-self-center aspect-[48/61]">
+                    <h4 class="text-xl col-start-2 ">SMKN 1 Bulukumba <span class="font-light block lg:inline text-gray-700 text-base lg:before:content-['-'] before:inline-block lg:before:mx-2 lg:before:mr-1.5 break-words text-wrap">Tehnik Jaringan Komputer dan Telekomunikasi</span></h4> 
                     <p class="font-light text-gray-700">2023 - <span class="text-red-600">Sekarang</span></p>
     
                 </div>
@@ -56,8 +56,18 @@
     </section>
     <hr class="my-96">
     <script>
-        const wPhoto = parseFloat(window.getComputedStyle(document.getElementById('profile')).width)
-        document.documentElement.style.setProperty('--width-pbox', `${wPhoto}px`)
+        const photo = document.getElementById('profile');
+
+        ['width','height'].forEach((v) => {
+            document.documentElement.style.setProperty(`--${v}-pbox`, `${window.getComputedStyle(photo)[v]}`);
+            console.log(`${v} : ${getComputedStyle(document.body).getPropertyValue(`--${v}-pbox`)}`);
+            // let w = window.getComputedStyle(photo)[v];
+            // console.log(`${v}`);
+        });
+
+        // const wPhoto = parseFloat(window.getComputedStyle(document.getElementById('profile')).width)
+        // document.documentElement.style.setProperty('--width-pbox', `${wPhoto}px`)
+        // document.documentElement.style.setProperty('--height-pbox', `${wPhoto}px`)
     </script>
 </body>
 </html>
