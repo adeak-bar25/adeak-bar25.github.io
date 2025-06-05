@@ -3,112 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Ade Akbar Magri Dinata</title>
+    <title>Personal Web</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body class="overflow-x-hidden">
-    <header class="w-full bg-slate-200/40 backdrop-blur-md sticky top-0 left-0 right-0 flex justify-between py-4 px-4 rounded-b-sm z-10">
+    <header class="w-full bg-slate-500/40 backdrop-blur-md sticky top-0 left-0 right-0 flex justify-between py-4 px-4 rounded-b-xl z-10">
         <div>
-            <h1 class="text-3xl select-none cursor-default font-pixelify font-semibold">Ade Akbar</h1>
+            <h1 class="text-xl select-none cursor-default">Ade Akbar</h1>
         </div>
-        <nav class="flex items-center ">
-            <div class="hamburger-btn sm:hidden hover:bg-slate-600/15 px-1 rounded-sm">
-                <span class=""></span>
-                <span class=""></span>
-                <span class=""></span>
-            </div>
-            <ul class="gap-5 items-center [&>*]:text-md [&>li]:block [&>li]:h-fit [&_a]:block  [&>li>a:hover]:text-main-color/100 [&>li>a:focus]:text-main-color/100 hidden sm:flex">
+        <nav class="hidden sm:block">
+            <ul class="flex gap-5 [&>*]:text-md [&>li>a:hover]:text-main-color/100 [&>li>a:focus]:text-main-color/100">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="">Project History</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero" class="h-[97dvh] px-3 md:pl-6 relative grid grid-rows-[min-content_max-content_min-content_1fr] lg:grid-rows-[1fr_min-content_max-content_min-content_1fr] mbl-lg:grid-rows-[min-content_max-content_min-content_1fr] mbl-lg:grid-cols-none lg:grid-cols-2 mbl-lg:grid-flow-row lg:grid-flow-col scroll-mt-20 overflow-hidden">
-            <p class="text-base animate-float-f-b lg:text-2xl lg:row-start-2 mbl-lg:row-start-auto">Hello world <span class="inline-block h-max origin-bottom w-fit animate-wiggle">👋</span>, it's</p>
-            <h2 class="text-4xl xxs:text-5xl xs:text-6xl md:text-7xl lg:text-8xl mb-2 animate-float-f-b max-[630px]:w-[95dvw] break-words lg:row-start-3 mbl-lg:row-start-auto">Ade Akbar Magri Dinata</h2>
+    <section id="hero" class="h-[97dvh] px-3 md:pl-6 grid grid-rows-[min-content_max-content_min-content_1fr] lg:grid-rows-[1fr_min-content_max-content_min-content_1fr] mbl-lg:grid-rows-[min-content_max-content_min-content_1fr] mbl-lg:grid-cols-none lg:grid-cols-2 mbl-lg:grid-flow-row lg:grid-flow-col scroll-mt-20">
+            <p class="text-base animate-float-f-b lg:text-2xl lg:row-start-2 mbl-lg:row-start-auto ">Halo <span class="inline-block h-max origin-bottom w-fit animate-wiggle">👋</span>, Perkenalkan nama saya:</p>
+            <h2 class="text-5xl xs:text-6xl md:text-7xl lg:text-8xl mb-2 animate-float-f-b max-[630px]:w-[95dvw] break-words lg:row-start-3 mbl-lg:row-start-auto">Ade Akbar Magri Dinata</h2>
             <p class="animate-float-f-b lg:row-start-4 mbl-lg:row-start-auto lg:text-xl text-gray-700">High School Student</p>
             
-            <div class="flex relative justify-end items-end sm:justify-self-end flex-col xs:w-full lg:col-start-2 mbl-lg:col-start-auto mbl-lg:row-span-1 mbl-lg:row-start-auto lg:row-span-5">
+            <div class="flex relative w-dvw justify-end items-end sm:justify-self-end flex-col xs:w-full lg:col-start-2 mbl-lg:col-start-auto mbl-lg:row-span-1 mbl-lg:row-start-auto lg:row-span-5">
                 <div class="after:block after:absolute after:-z-[1] after:animate-slide-f-br after:bg-sky-500 after:bottom-0 after:-right-3 after:rounded-tl-lg after:w-[calc(var(--width-pbox)+.75rem)] after:h-[calc(var(--height-pbox)-5.5rem)]">
-                    <img src="asset/profile.png" id="profile" class="xxs:h-[65dvh] w-auto flex-none xs:static animate-slide-f-r lg:h-[75dvh] portrait:h-auto portrait:w-[90dvw] lg-ptr:w-1/2">
+                    <img src="asset/profile.png" id="profile" class="xxs:h-[65dvh] w-auto flex-none xs:static animate-slide-f-r lg:h-[75dvh] portrait:h-auto portrait:w-[90dvw]">
                 </div>
             </div>
     </section>
     <section id="about" class="mt-20 px-4 lg:px-6 2xl:mt-28 scroll-m-16 max-w-[100dvw]">
-        <h2 class="section-title">About Me</h2>
-        <p class="xs:text-lg xl:text-xl">Saya adalah seorang siswa SMK yang memiliki minat besar dalam bidang komputer, khususnya di dunia pengembangan website. Saya mulai tertarik dengan pemrograman sejak duduk di bangku SMK, dan sejak itu terus belajar serta mengembangkan keterampilan di berbagai teknologi web seperti HTML, CSS, dan JavaScript.</p>
+        <h2 class="text-2xl xs:text-5xl md:text-6xl mb-2 xs:mb-5">About Me</h2>
+        <p class="xs:text-lg xl:text-xl">Saya adalah seorang siswa SMK yang memiliki minat besar dalam bidang komputer, khususnya di dunia pengembangan website. Saya mulai tertarik dengan pemrograman sejak duduk di bangku SMK, dan sejak itu terus belajar serta mengembangkan keterampilan di berbagai teknologi web seperti HTML, CSS, JavaScript, dan backend menggunakan Node.js.</p>
         <h3 class="text-2xl mt-5">Pendidikan Terakhir</h3>
         <div class="m-4 mx-auto flex flex-col">
             <div class="flex items-center gap-4">
                 <div class="md:flex items-center justify-center m-2 w-9 h-9 relative hidden">
                     <div class="w-5 h-5 bg-red-500/95 rounded-full ring-4 ring-red-500/25 animate-ring-pulse"></div>
                 </div>
-                <div class="card px-4 py-3 grid grid-cols-[88px_1fr] grid-rows-[repeat(2_,max-content)] ">
-                        <img src="asset/logo/logosmk1nobg.png" alt="logo smkn 1 bulukumba" class="min-w-17 max-w-17 h-17 row-span-2 mr-5 place-self-center aspect-[48/61]">
-                        <span><h4 class="xs:text-lg sm:text-xl col-start-2 tracking-wider inline-block">SMKN 1 Bulukumba </h4> 
-                        <span class="font-light block lg:inline text-gray-700 text-base lg:before:content-['-'] before:inline-block lg:before:mx-2 lg:before:mr-1.5">Tehnik Jaringan Komputer dan Telekomunikasi</span>
-                    </span>
+                <div class="card grid grid-cols-[88px_1fr] grid-rows-[repeat(2_,max-content)] ">
+                    <img src="asset/logo/logosmk1nobg.png" alt="logo smkn 1 bulukumba" class="min-w-17 max-w-17 h-17 row-span-2 mr-5 place-self-center aspect-[48/61]">
+                    <h4 class="text-xl col-start-2 ">SMKN 1 Bulukumba <span class="font-light block lg:inline text-gray-700 text-base lg:before:content-['-'] before:inline-block lg:before:mx-2 lg:before:mr-1.5 break-words text-wrap">Tehnik Jaringan Komputer dan Telekomunikasi</span></h4> 
                     <p class="font-light text-gray-700">2023 - <span class="text-red-600">Sekarang</span></p>
     
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="skills" class="main-section ">
-        <h2 class="section-title">Skills</h2>
-        <div class="mt-4 text-center flex gap-3 [&>div]:card [&>div]:flex [&>div]:flex-col [&>div]:items-center [&>div]:py-6 [&>div]:w-44 flex-wrap justify-center">
-            <div>
-                <img src="asset/logo/HTML5_Logo.svg" alt="html5_logo" class="min-w-20 max-w-20 h-20 mb-3">
-                <h3 class="text-lg">HTML</h3>
-                <span>Hypertext Markup Language</span>
-            </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/css" alt="css_logo" class="min-w-20 max-w-20 h-20 mb-3 bg-white rounded-xl rounded-tl-none">
-                <h3 class="text-xl">CSS</h3>
-                <span>Cascading Style Sheets</span>
-            </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/tailwindcss" alt="tailwindcss_logo" class="min-w-20 max-w-20 h-20 mb-3">
-                <h3 class="text-xl">Tailwind CSS</h3>
-                <span>Utility-First CSS Framework</span>
-            </div>
-            <div>
-                <img src="https://cdn.simpleicons.org/javascript" alt="javascript_logo" class="min-w-20 max-w-20 h-20 mb-3 bg-black">
-                <h3 class="text-xl">JavaScript</h3>
-                <span>Programming Language</span>
-            </div>
-            <div>
-                <i class="bi bi-git min-w-20 max-w-20 h-20 mb-3 text-[5rem] block relative before:absolute before:inset-0 text-[#f03c2e]"></i>
-                <h3 class="text-xl">Git</h3>
-                <span>Version Control System</span>
-            </div>
-        </div>
     </section>
-    <section id="project" class="main-section">
-        <h2 class="section-title">Project History</h2>
-    </section>
-    <footer class="bg-slate-900 text text-slate-50 text-center pt-2 pb-2 mt-8">
-        <div class="flex flex-col md:flex-row border-b border-slate-400 md:justify-between px-4 items-center pb-3">
-            <h1>Create with ❤️ by Ade Akbar</h1>
-            <div class="flex gap-3 h-auto justify-center md:justify-normal mt-1 md:mt-2 p-2  md:pb-4 md:p-3 items-center [&>*]:h-fit [&>*:not(:first-child)]:inline-block">
-                <p class="mr-3 hidden md:block text-lg">Follow Me at:</p>
-                <a href="https://www.instagram.com/adeak_bar25/" target="_blank"><i class="bi bi-instagram w-5 h-5 md:w-6 md:h-6 text-xl"></i></a>
-                <a href="https://github.com/adeak-bar25" target="_blank"><i class="bi bi-github w-5 h-5 md:w-6 md:h-6 text-xl"></i></a>
-            </div>
-        </div>
-        <div>
-            <p class="text-sm pt-5 mb-3">&copy; 2025 Ade Akbar Magri Dinata</p>
-        </div>
-    </footer>
+    <hr class="my-96">
     <script>
         const photo = document.getElementById('profile');
 
@@ -117,10 +63,6 @@
                 document.documentElement.style.setProperty(`--${v}-pbox`, `${window.getComputedStyle(photo)[v]}`);
                 // console.log(`${v} : ${getComputedStyle(document.body).getPropertyValue(`--${v}-pbox`)}`);
             });
-        });
-
-        document.querySelector('.hamburger-btn').addEventListener('click', (e, ) => {
-            e.currentTarget.classList.toggle('hamburger-btn-clicked');
         });
     </script>
 </body>
