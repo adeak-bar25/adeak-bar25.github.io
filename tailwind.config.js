@@ -6,18 +6,20 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'md': '768px',
+        'xs': {'raw': '((min-width: 546px) and (max-width: 640px))'},
+        'xxs' : {'raw': '((min-width: 396px) and (max-width: 546px))'},
+        // 'md': '768px',
         // 'xxxs': '280px',
-        'xxs' : '396px',
-        'xs': '546px',
         'mbl-lg' : {'raw': '((min-height: 872px) and (max-width: 1024px))'},
-        'portrait': {'raw': '(min-height: 872px)'}
+        'portrait': {'raw': '(min-height: 872px)'},
+        'lg-ptr': {'raw': '(min-height: 1024px)'},
       },
       spacing: {
         '17': '4.25rem'
       },
       fontFamily: {
         'jktsans' : '"Plus Jakarta Sans", Roboto, Arial, sans-serif',
+        'pixelify' : '"Pixelify Sans", sans-serif'
       },
       colors: {
         'main-color' : 'rgb(var(--main-theme)/ <alpha-value>)',
